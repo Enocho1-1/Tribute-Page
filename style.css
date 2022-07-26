@@ -14,7 +14,12 @@ main{
   width: 100vw;
 }
 
-h1::after{
+section{
+  height: 300px;
+  width: 100vw;
+  background-color: #f8f8ff;
+}
+header h1::after{
   content: " | el-Hajj Malik el-Shabazz";
 }
 
@@ -54,21 +59,20 @@ a:hover::after{
   transition: ease-in-out 1s;
 }
 
-main:nth-child(1){
-  height: 12.5rem;
-  width: 100vw;
-  background-color: #f8f8ff;
-  padding: 5px 15px;
-}
+/* Header Elements */
 
 header,#title,#navagation{
   display: flex;
 }
 
 header{
+  position: sticky;
   justify-content: space-between;
   color: #0d0d0d;
   padding: 0 25px;
+  width: 100vw;
+  background-color: #f8f8ff;
+  padding: 5px 15px;
 }
 
 #title,#navagation{
@@ -89,6 +93,19 @@ header{
   justify-content: center;
   align-items: flex-end;
   margin: auto;
+}
+
+#early-life{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("imgs/malcolmx-ella.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 75%;
+  height: 100vh;
+  width: 100vw;
 }
 
 
