@@ -92,9 +92,10 @@ a{
 }
 
 li{
-  display: inline-block;
+  display: block;
   padding: 10px 5px;
-  font-size: 25px;
+  font-size: 55px;
+  text-align: center;
 }
 
 a:hover{
@@ -118,39 +119,79 @@ a:hover::after{
   transition: ease-in-out 1s;
 }
 
-/* Header Elements */
-
-header,#title,#navagation{
-  display: flex;
+/* Side Widget */
+#side-widget{
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: #f8f8ff;
+  z-index: 3;
 }
 
+#side-widget img{
+  height: inherit;
+  width: 75px;
+}
+
+#side-widget:hover{
+  cursor: pointer;
+}
+
+/* Side Menu */
+#side-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: none;
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  left: 80%;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 3;
+}
+
+#side-menu div{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 45px;
+  color: #e60000;
+  cursor: pointer;
+}
+/* Header Elements */
 header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: sticky;
   color: #0d0d0d;
   padding: 0 25px;
   width: 100vw;
+  height: 250px;
   background-color: #f8f8ff;
   padding: 5px 45px;
 }
 
-#title,#navagation{
-  height: 200px;
-  width: 900px;
-}
-
 #title{
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 5px 0;
   background: #f8f8ff;
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
-}
-
-#navagation{
-  justify-content: center;
-  align-items: flex-end;
-  margin: auto;
 }
 
 #early-life{
