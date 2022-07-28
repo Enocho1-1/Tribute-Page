@@ -1,8 +1,9 @@
     // Modal Full Image Display
-    const openFullImg = (pic, caption) => {
+    const openFullImg = (pic, caption,quotes) => {
         document.querySelector('#fullImageBox').style.display = 'flex'
         document.querySelector('#fullImg').src = pic
-        document.querySelector('#img-caption').innerHTML = `<p>${caption}</p>`
+        document.querySelector('#img-caption').innerHTML = `<p>${caption}</p>
+        <p><q>${quotes}</q></p>`
     }
 
     const closeFullImg = () => {
