@@ -33,6 +33,53 @@ img:hover::after{
   transition: ease-in-out 1s;
 }
 
+button {
+  color: #090909;
+  margin: 5px;
+  padding: 0.7em 1.7em;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+              -4px -4px 12px #ffffff;
+}
+
+section{
+  height: auto;
+  width: 100vw;
+  background-color: #f8f8ff;
+}
+
+section h1{
+  font-size: 4rem;
+  padding: 10px;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+section h1::after{
+ content: "";
+ display: block;
+ border-top: 2px solid #e60000;
+}
+
+section p{
+  font-size: 1.5rem;
+  line-height: 2.5;
+  padding: 10px;
+}
+
 /* Full Image Elements */
 
 .fullImage{
@@ -54,7 +101,7 @@ height: 550px;
 max-width: 500px;
 }
 
-.fullImage span{
+span{
 position: absolute;
 top: 5%;
 right: 5%;
@@ -70,12 +117,6 @@ cursor: pointer;
   color: #CCCCCC;
   font-size: 25px;
   z-index: 2;
-}
-
-section{
-  height: 300px;
-  width: 100vw;
-  background-color: #f8f8ff;
 }
 
 header h1::after{
@@ -131,6 +172,7 @@ a:hover::after{
   padding: 5px;
   border-radius: 100px;
   background-color: #f8f8ff;
+  opacity: 0.5;
   z-index: 3;
 }
 
@@ -173,6 +215,7 @@ a:hover::after{
   color: #e60000;
   cursor: pointer;
 }
+
 /* Header Elements */
 header{
   display: flex;
@@ -194,20 +237,40 @@ header{
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
-#early-life{
+#early-life,#NOI{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("imgs/malcolmx-ella.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 75%;
   height: 100vh;
   width: 100vw;
 }
 
+#early-life{
+  background-image: url("imgs/malcolmx-ella.jpg");
+  background-position: 75%;
+}
+
+#NOI{
+  background-image: url("imgs/NOI-1.jpg");
+}
+
+
+.page_overlay{
+  position: fixed; 
+  display: none; 
+  width: 100vw; 
+  height: 100vh; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 5;
+}
 
 .overlay{
   position: absolute;
@@ -217,3 +280,27 @@ header{
   z-index: 0;
 }
 
+.modal{
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 75vw;
+  padding: 10px;
+  background: rgba( 255, 255, 255, 0.9 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  overflow-y: scroll;
+  z-index: 6;
+}
+
+.modal h1{
+  font-size: 3rem;
+}
+
+.modal p{
+  font-size: 1.5rem;
+}

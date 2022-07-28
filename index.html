@@ -10,6 +10,9 @@
 </head>
 <body>
   <main>
+    <div class="page_overlay">
+      <span id="close_btn">X</span>
+    </div>
     <!-- Side Menu Widget -->
     <div id="side-widget">
       <img src="icons/menus.png" alt="menu" title="Navagation Menu" id="widget">
@@ -18,8 +21,8 @@
     <div id="side-menu">
       <div id="close">X</div>
         <ul>
-          <li><a href="#">Early Life</a></li>
-          <li><a href="#">Detriot Red</a></li>
+          <li><a href="#section_one">Early Life</a></li>
+          <!-- <li><a href="#">Detriot Red</a></li> -->
           <li><a href="#">Nation of Islam</a></li>
           <li><a href="#">Human Rights Activists</a></li>
           <li><a href="#">Sources</a></li>
@@ -38,18 +41,44 @@
       <div id="img-caption"></div>
       <span onclick="closeFullImg()">X</span>
     </div>
-
+    <!-- Early Life Section -->
     <div id="early-life">
       <div class="overlay"></div>
         <img src="imgs/Louise_and_Earl_Little.jpg" alt="Louise and Earl Little" title="Louise and Earl Little" onclick="openFullImg(this.src,'Earl Little (right) was a itnerant baptist minister while simultaneously being a committed follower of the gallant pan-africanist leader Marcus Garvey. A majority of the sermons Earl Little disseminated to congregations (mainly african-americans) included some of Garvey\'s ideologies and rhetoric. Louise Little was an educated women (an anomaly at that time), she instilled within her children the indispensability of education.')">
-        <img src="imgs/young-malcom.jpg" alt="Malcom Little" title="Young Malcolm Little smiles for the camera" onclick="openFullImg(this.src,'As a child Malcolm was a mischievous, intelligent, and jovial personality. Often accompanying his father to his private meetings with other local african-americans; during these meetings pan-africanism ideologies and rhetoric were discussed. Malcolm acknowledged that these meetings conceived within him a militant sentiment at an early age. ')">
-        <img src="imgs/EYZj2PTUMAA6u2-.jpg" alt="Detriot Red" title="Detriot Red" onclick="openFullImg(this.src)">
-        <img src="imgs/811d1b33f97221f41bf375a2d546f719.jpg" alt="Detriot Red" title="Detriot Red" onclick="openFullImg(this.src)">
-      
+        <img src="imgs/young-malcom.jpg" alt="Malcolm Little" title="Young Malcolm Little smiles for the camera" onclick="openFullImg(this.src,'As a child Malcolm was a mischievous, intelligent, and jovial personality. Often accompanying his father to his private meetings with other local african-americans; during these meetings pan-africanism ideologies and rhetoric were discussed. Malcolm acknowledged that these meetings conceived within him a militant sentiment at an early age. ')">
+        <img src="imgs/EYZj2PTUMAA6u2-.jpg" alt="Detriot Red" title="Detriot Red" onclick="openFullImg(this.src,'Here Malcolm poses sharply in a zoot suit. This dressing style was prevalent within Boston\’s African-American community; particularly within the male demographic.')">
+        <img src="imgs/Malcolm_X_mugshot_1944.jpg" alt="Detriot Red" title="Malcolm mug shot" onclick="openFullImg(this.src,'In both Boston,Massachusetts and Harlem, New York during the mid 20th century there was a prevalence of several illicit “hustles” which included the numbers racket, drug peddling, sex steering, and thievery. Malcolm was dubbed “Detroit red” and participated in these illicit activities. Consequently, he was sent to  Charlestown State Prison to serve a eight-to-ten-year sentence for larceny.')">
     </div>
-    <section>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus suscipit rerum error aspernatur officiis nesciunt quae quia, consectetur quibusdam unde impedit consequatur. Beatae perspiciatis facilis ad neque doloremque, ea atque?</p>
+    <section id="section_one">
+      <h1>Early Life</h1>
+      <div>
+        <p>Malcolm X was born Malcolm Little on May 19, 1925 in Omaha, Nebraska. His father Earl Little was a itnerant baptist minister and a vehement advocate of <strong>Marcus Garvey</strong>. The local Ku Klux Klan in Omaha frequently harassed Malcolm's family because of his fathers preaching that was "stirring up the good'ole black folks" in their estimation. Consequently, the Little family moved to Lansing, Michighan this is where Malcolm grew up. Although the Little family relocated to Michighan, Earl Little's sermons that were disseminated to local African-American churchs did not cease.The contents in these sermons integrated Marcus Garvey's Pan-african/racial pride ideologies and rhetoric . Inevitably, the Little family was again subjected to harassment this time by the local white supremacist group called the Black Legionaries. In 1931, Malcolm's father was brutally murdered by the Black Legionaries. Authorities asserted that his death was an accident. The widowed Mrs.Little was denied the benefits that were included in Earl Little's insurance policy.<button id="early_life_button">Read More...</button></p>
+      </div>
     </section>
+    <div id="section_one_modal" class="modal"> 
+      <h1>Early Life</h1>
+      <hr>
+      <p>Malcolm X was born Malcolm Little on May 19, 1925 in Omaha, Nebraska. His father Earl Little was a itnerant baptist minister and a vehement advocate of <strong>Marcus Garvey</strong>. The local Ku Klux Klan in Omaha frequently harassed Malcolm's family because of his fathers preaching that was "stirring up the good'ole black folks" in their estimation. Consequently, the Little family moved to Lansing, Michighan this is where Malcolm grew up. Although the Little family relocated to Michighan, Earl Little's sermons that were disseminated to local African-American churchs did not cease.The contents in these sermons integrated Marcus Garvey's Pan-african/racial pride ideologies and rhetoric . Inevitably, the Little family was again subjected to harassment this time by the local white supremacist group called the Black Legionaries. In 1931, Malcolm's father was brutally murdered by the Black Legionaries. Authorities asserted that his death was an accident. The widowed Mrs.Little was denied the benefits that were included in Earl Little's insurance policy.</p>
+      <h1>Childhood</h1>
+      <hr>
+      <p>Following the untimely death of her husband, Louise Little tried desparately to provide for her seven children but that effort would ultimately take a significant toll on her. Louise worked a variety of menial jobs, however when it was revealed who she widowed she would be terminated almost immediately. From a financial standpoint the Little family at this point was impoverished, eventually they came to rely upon state welfare. Moreover, state agency officers would frequently visit the Little household, constantly asserting Louise's incompetence in regards to taking care of her children. Inevitably, Louise suffered a complete mental break down and Malcolm along with his siblings became wards of the state.</p>
+    </div>
+    <!-- Early Life Section End -->
+    <!-- Nation of Islam -->
+    <div id="NOI">
+      <div class="overlay"></div>
+        <img src="imgs/cropped-cropped-Honorable-Elijah-Muhamma.jpg" alt="The Honorable Elijah Muhammad" title="The Honorable Elijah Muhammad" onclick="openFullImg(this.src,'Earl Little (right) was a itnerant baptist minister while simultaneously being a committed follower of the gallant pan-africanist leader Marcus Garvey. A majority of the sermons Earl Little disseminated to congregations (mainly african-americans) included some of Garvey\'s ideologies and rhetoric. Louise Little was an educated women (an anomaly at that time), she instilled within her children the indispensability of education.')">
+        <img src="imgs/14066060944_0f0e3480e9_b.jpg" alt="Mosque 7" title="Mosque 7 in Harlem" onclick="openFullImg(this.src,'As a child Malcolm was a mischievous, intelligent, and jovial personality. Often accompanying his father to his private meetings with other local african-americans; during these meetings pan-africanism ideologies and rhetoric were discussed. Malcolm acknowledged that these meetings conceived within him a militant sentiment at an early age. ')">
+        <img src="imgs/LoC-Elijah-Muhammad-addressing-followers-2.jpg" alt="NOI" title="NOI Rally" onclick="openFullImg(this.src,'Here Malcolm poses sharply in a zoot suit. This dressing style was prevalent within Boston\’s African-American community; particularly within the male demographic.')">
+        <img src="imgs/1_qVa1bUa38E7hkE8qkMgUfQ.jpeg" alt="Elijah Muhammad and Malcolm X" title="Elijah Muhammad and Malcolm X" onclick="openFullImg(this.src,'In both Boston,Massachusetts and Harlem, New York during the mid 20th century there was a prevalence of several illicit “hustles” which included the numbers racket, drug peddling, sex steering, and thievery. Malcolm was dubbed “Detroit red” and participated in these illicit activities. Consequently, he was sent to  Charlestown State Prison to serve a eight-to-ten-year sentence for larceny.')">
+    </div>
+    <section id="section_two">
+      <h1>Nation of Islam</h1>
+      <div>
+        <p>Malcolm X was born Malcolm Little on May 19, 1925 in Omaha, Nebraska. His father Earl Little was a itnerant baptist minister and a vehement advocate of <strong>Marcus Garvey</strong>. The local Ku Klux Klan in Omaha frequently harassed Malcolm's family because of his fathers preaching that was "stirring up the good'ole black folks" in their estimation. Consequently, the Little family moved to Lansing, Michighan this is where Malcolm grew up. Although the Little family relocated to Michighan, Earl Little's sermons that were disseminated to local African-American churchs did not cease.The contents in these sermons integrated Marcus Garvey's Pan-african/racial pride ideologies and rhetoric . Inevitably, the Little family was again subjected to harassment this time by the local white supremacist group called the Black Legionaries. In 1931, Malcolm's father was brutally murdered by the Black Legionaries. Authorities asserted that his death was an accident. The widowed Mrs.Little was denied the benefits that were included in Earl Little's insurance policy.<button id="NOI_button">Read More...</button></p>
+      </div>
+    </section>
+    <div id="section_two_modal" class="modal"> 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illum non, harum ullam minus architecto cum iusto assumenda accusantium commodi, quasi in consequuntur molestias totam officiis laboriosam animi consectetur facilis quo amet libero aspernatur enim. Velit, excepturi. Perferendis mollitia in, doloremque sapiente nulla commodi quos quidem consequatur cumque quis itaque? Illum similique quam nostrum eius ex fugiat suscipit ut eveniet sit voluptas tempore, facere voluptatum magni repudiandae! Iusto molestias nobis, autem assumenda sapiente libero nostrum veritatis fuga aliquam consectetur obcaecati hic quod ducimus dolores, odio doloremque error soluta dicta dolorum perspiciatis omnis. Nemo, fugiat mollitia? Vel aliquam illum at exercitationem.</div>
   </main>
   <script src="script.js"></script>
 </body>
