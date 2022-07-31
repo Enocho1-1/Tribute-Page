@@ -2,8 +2,8 @@
     const openFullImg = (pic, caption,quotes) => {
         document.querySelector('#fullImageBox').style.display = 'flex'
         document.querySelector('#fullImg').src = pic
-        document.querySelector('#img-caption').innerHTML = `<p>${caption}</p>
-        <p><q>${quotes}</q></p>`
+        document.querySelector('#img-caption').innerHTML = `<div style=" margin: 10px;"><p>${caption}</p>
+        <p><q>${quotes}</q></p></div>`
     }
 
     const closeFullImg = () => {
