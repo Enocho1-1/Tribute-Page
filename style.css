@@ -127,7 +127,7 @@ ul{
   list-style: none;
 }
 
-a{
+ul a{
   color:#0d0d0d;
   text-decoration: none;
 }
@@ -139,11 +139,11 @@ li{
   text-align: center;
 }
 
-a:hover{
+ul a:hover{
   color: #e60000;
 }
 
-a::after{
+ul a::after{
   content: "";
   display: block;
   border: 1px solid #e60000;
@@ -151,7 +151,7 @@ a::after{
   transform: scale(0);
 }
 
-a:hover::after{
+ul a:hover::after{
   content: "";
   display: block;
   border: 1px solid #e60000;
@@ -303,4 +303,75 @@ header{
 
 .modal p{
   font-size: 1.5rem;
+}
+
+.modal a{
+  text-decoration: none;
+}
+
+
+#Bimbi:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/john\ bimbi.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 300px;
+}
+
+#one:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/temple\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 300px;
+}
+
+#two:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/two.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 300px;
+}
+
+#Betty:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/betty-x.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 300px;
+}
+
+#Attallah:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/atta.webp');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 200px; 
+  height: 200px;
+}
+
+#Ily:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 300px;
 }
