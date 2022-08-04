@@ -287,7 +287,7 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   height: 75vh;
-  width: 75vw;
+  width: 90vw;
   padding: 10px;
   background: rgba( 255, 255, 255, 0.9 );
   backdrop-filter: blur( 4px );
@@ -310,13 +310,68 @@ header{
 }
 
 
+#Garvey:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/marcus-gar.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inherit;
+  width: 300px; 
+  height: 300px;
+}
+
+#Ella:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/ella.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inherit;
+  width: 300px; 
+  height: 300px;
+}
+
+#Roseland:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/roseland.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inherit;
+  width: 300px; 
+  height: 300px;
+}
+
+#Charlestown:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/Charlestown-State-Prison.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inherit;
+  width: 300px; 
+  height: 300px;
+}
+
+#Norfolk:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/norfolk.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inherit;
+  width: 300px; 
+  height: 300px;
+}
+
 #Bimbi:hover::before{
   content:"";
   position: absolute;
   background-image: url('imgs/john\ bimbi.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
-  display: inline-block;
+  display: inherit;
   width: 300px; 
   height: 300px;
 }
@@ -327,7 +382,7 @@ header{
   background-image: url('imgs/temple\ 1.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
-  display: inline-block;
+  display: inherit;
   width: 300px; 
   height: 300px;
 }
