@@ -287,7 +287,7 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   height: 75vh;
-  width: 90vw;
+  width: 85vw;
   padding: 10px;
   background: rgba( 255, 255, 255, 0.9 );
   backdrop-filter: blur( 4px );
@@ -310,6 +310,7 @@ header{
 }
 
 
+/* Modal Link Images */
 #Garvey:hover::before{
   content:"";
   position: absolute;
@@ -318,7 +319,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Ella:hover::before{
@@ -329,7 +330,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Roseland:hover::before{
@@ -340,7 +341,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Charlestown:hover::before{
@@ -351,7 +352,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Norfolk:hover::before{
@@ -362,7 +363,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Bimbi:hover::before{
@@ -373,7 +374,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #one:hover::before{
@@ -384,7 +385,7 @@ header{
   background-size: 200px;
   display: inherit;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #two:hover::before{
@@ -395,7 +396,7 @@ header{
   background-size: 200px;
   display: inline-block;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Betty:hover::before{
@@ -406,7 +407,7 @@ header{
   background-size: 200px;
   display: inline-block;
   width: 300px; 
-  height: 300px;
+  height: 200px;
 }
 
 #Attallah:hover::before{
@@ -416,7 +417,7 @@ header{
   background-repeat: no-repeat;
   background-size: 200px;
   display: inline-block;
-  width: 200px; 
+  width: 300px; 
   height: 200px;
 }
 
@@ -428,5 +429,27 @@ header{
   background-size: 200px;
   display: inline-block;
   width: 300px; 
-  height: 300px;
+  height: 200px;
+}
+
+#Hate:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#NAACP:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/NAACP_seal.svg.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
 }
