@@ -41,5 +41,12 @@
                 sectionTwo.style.display = 'block'
                 overlay.style.display = 'block'
              break
+             case "human_rights":
+                const sectionThree = document.querySelector('#section_three_modal')
+                 overlay = document.querySelector('.page_overlay')
+
+                 sectionThree.style.display = 'block'
+                overlay.style.display = 'block'
+             break
         }
     })
