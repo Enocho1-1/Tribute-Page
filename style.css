@@ -290,7 +290,7 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   height: 75vh;
-  width: 85vw;
+  width: 100vw;
   padding: 10px;
   background: rgba( 255, 255, 255, 0.9 );
   backdrop-filter: blur( 4px );
@@ -301,8 +301,19 @@ header{
   z-index: 6;
 }
 
+.modal div{
+  padding: 25px;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .modal h1{
   font-size: 3rem;
+}
+
+.modal h2{
+  margin: 5px;
 }
 
 .modal p{
@@ -451,6 +462,72 @@ header{
   content:"";
   position: absolute;
   background-image: url('imgs/NAACP_seal.svg.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#twenty-seven:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/no.27.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#wallace:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/091108_Imam_Warith_Deen_Mohammed.webp.crdownload');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#JFK:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/jfk-assassination-gettyimages-517330536.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#Lumumba:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/lumumba.webp');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#Evers:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/MDAH-Medgar-Evers.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#girls:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
   display: inline-block;
