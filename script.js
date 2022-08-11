@@ -41,11 +41,18 @@
                 sectionTwo.style.display = 'block'
                 overlay.style.display = 'block'
              break
-             case "human_rights":
+             case "disillusion_depature":
                 const sectionThree = document.querySelector('#section_three_modal')
                  overlay = document.querySelector('.page_overlay')
 
                  sectionThree.style.display = 'block'
+                overlay.style.display = 'block'
+             break
+             case "human_rights":
+                const sectionFour = document.querySelector('#section_four_modal')
+                 overlay = document.querySelector('.page_overlay')
+
+                 sectionFour.style.display = 'block'
                 overlay.style.display = 'block'
              break
         }
