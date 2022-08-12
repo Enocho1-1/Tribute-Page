@@ -24,14 +24,9 @@ img{
 
 img:hover{
   cursor: pointer;
+  box-shadow: 2px 2px 2px #e60000;
 }
 
-img:hover::after{
-  content: "";
-  display: block;
-  background-color: #e60000;
-  transition: ease-in-out 1s;
-}
 
 button {
   color: #090909;
