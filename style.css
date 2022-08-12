@@ -22,7 +22,7 @@ img{
   z-index: 1;
 }
 
-img:hover{
+#early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover{
   cursor: pointer;
   box-shadow: 2px 2px 2px #e60000;
 }
@@ -49,6 +49,10 @@ button:hover {
 button:active {
   box-shadow: 4px 4px 12px #c5c5c5,
               -4px -4px 12px #ffffff;
+}
+
+a{
+  color: #e60000;
 }
 
 section{
@@ -303,7 +307,7 @@ header{
 .modal div{
   padding: 25px;
   height: auto;
-  width: 100%;
+  /* width: 80%; */
   overflow-x: hidden;
 }
 
@@ -527,6 +531,28 @@ header{
   content:"";
   position: absolute;
   background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#MLK:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/1515969703-MLK_and_Malcolm_X.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#Azzam:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/azzamm.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
   display: inline-block;
