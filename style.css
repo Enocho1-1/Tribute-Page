@@ -56,9 +56,17 @@ a{
 }
 
 section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   width: 100vw;
   background-color: #f8f8ff;
+}
+
+section div {
+  height: auto;
+  width: 80%;
 }
 
 section h1{
@@ -77,6 +85,10 @@ section p{
   font-size: 1.5rem;
   line-height: 2.5;
   padding: 10px;
+}
+
+.section_one_header_two::after{
+  content: " | Harlem";
 }
 
 /* Full Image Elements */
@@ -307,15 +319,17 @@ header{
 .modal div{
   padding: 25px;
   height: auto;
-  /* width: 80%; */
+  width: fit-content;
   overflow-x: hidden;
 }
+
 
 .modal h1{
   font-size: 3rem;
 }
 
 .modal h2{
+  font-size: 2rem;
   margin: 5px;
 }
 
@@ -398,6 +412,7 @@ header{
 #one:hover::before{
   content:"";
   position: absolute;
+  left: 87%;
   background-image: url('imgs/temple\ 1.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
@@ -464,6 +479,7 @@ header{
 #NAACP:hover::before{
   content:"";
   position: absolute;
+  left: 5%;
   background-image: url('imgs/NAACP_seal.svg.png');
   background-repeat: no-repeat;
   background-size: 200px;
@@ -530,10 +546,11 @@ header{
 #girls:hover::before{
   content:"";
   position: absolute;
+  left: 87%;
   background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
-  display: inline-block;
+  display:inline-block;
   width: 300px; 
   height: 200px;
 }

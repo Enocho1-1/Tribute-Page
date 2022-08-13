@@ -6,9 +6,9 @@
         <p><q>${quotes}</q></p></div>`
     }
 
-    const closeFullImg = () => {
-        document.querySelector('#fullImageBox').style.display = 'none'
-    }
+    function closeFullImg() {
+   document.querySelector('#fullImageBox').style.display = 'none'
+}
 
     document.addEventListener('click', e => {
         let overlay = document.querySelector('.page_overlay')
