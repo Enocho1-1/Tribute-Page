@@ -610,3 +610,37 @@ header{
   width: 300px; 
   height: 200px;
 }
+
+#fire:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/burn.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#miltant:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/artworks-FFmFEzM03eM7e55G-EayWsg-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
+
+#audubon:hover::before{
+  content:"";
+  position: absolute;
+  left: 87%;
+  background-image: url('imgs/audobon.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: inline-block;
+  width: 300px; 
+  height: 200px;
+}
