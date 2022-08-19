@@ -1777,18 +1777,16 @@ header{
     left: 0;
     display: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 4;
-    overflow-y: scroll;
   }
   
   .fullImage img{
-    margin-top: 7.813rem;
-    width: 28.125rem;
-    height: 28.125rem;
-    max-width: 28.125rem;
+    width: 31.25rem;
+    height: 34.375rem;
+    max-width: 31.25rem;
   }
   
   span{
@@ -1802,10 +1800,12 @@ header{
   }
   
   #img-caption{
-    height: inherit;
-    width: auto;
+    margin-top: 7.813rem;
+    position: relative;
+    height: auto;
+    width: 31.25rem;
     color: #CCCCCC;
-    font-size: 2.5rem;
+    font-size: 1.563rem;
     z-index: 2;
   }
   
