@@ -22,6 +22,8 @@ img{
   z-index: 1;
 }
 
+
+
 #early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover{
   cursor: pointer;
   box-shadow: 0.125rem 0.125rem  0.125rem  #e60000;
@@ -244,6 +246,7 @@ header{
 #title{
   font-size: 2rem;
   padding: 0.313rem 0;
+  text-align: center;
   background: #f8f8ff;
   text-shadow: 0.063rem 0rem 0.063rem #CCCCCC, 0rem 0.063rem 0.063rem #EEEEEE, 0.125rem 0.063rem 0.063rem #CCCCCC, 0.063rem 0.125rem 0.063rem #EEEEEE, 0.188rem 0.125rem 0.063rem #CCCCCC, 0.125rem 0.188rem 0.063rem #EEEEEE, 0.25rem 0.188rem 0.063rem #CCCCCC, 0.188rem 0.25rem 0.063rem #EEEEEE, 0.313rem 0.25rem 0.063rem #CCCCCC, 0.25rem 0.313rem 0.063rem #EEEEEE, 0.375rem  0.313rem 0.063rem #CCCCCC, 0.313rem 0.375rem 0.063rem #EEEEEE, 0.438rem 0.375rem 0.063rem #CCCCCC;
 }
@@ -639,7 +642,7 @@ header{
 
 /* Media Queries */
 
-/* Mobile Smart Phone */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
     margin:0;
@@ -714,14 +717,17 @@ header{
   
   #NOI{
     background-image: url("imgs/NOI-1.jpg");
+    background-position: 25%;
   }
   
   #Departure{
     background-image: url("imgs/download.jpg");
+    background-position: 75%;
   }
   
   #Human_Rights_Activists{
     background-image: url("imgs/Malcolm-X-in-Cairo_CrescentStarAfrica.jpg");
+    background-position: 5%;
   }
 
   section{
@@ -747,4 +753,1408 @@ header{
     line-height: 2.5;
     padding:  0.625rem;
   }
+
+  /* Full Image Elements */
+
+.fullImage{
+  width:100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  overflow-y: scroll;
+  }
+  
+  .fullImage img{
+  margin-top: 6.25rem;
+  width: 15.625rem;
+  height: 15.625rem;
+  max-width: 15.625rem;
+  }
+  
+  span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 87%;
+  font-size: 1.875rem;
+  color: white;
+  cursor: pointer;
+  }
+  
+  #img-caption{
+    height: inherit;
+    width: auto;
+    color: #CCCCCC;
+    font-size: 1.25rem;
+    z-index: 2;
+  }
+  
+
+
+  /* Modal */
+  .modal{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 100%;
+    padding: 0.625rem;
+    background: rgba( 255, 255, 255, 0.9 );
+    backdrop-filter: blur( 0.25rem );
+    -webkit-backdrop-filter: blur( 0.25rem);
+    border-radius: 0.625rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 6;
+  }
+  
+  .modal div{
+    padding: 1.563rem;
+    height: auto;
+    width: fit-content;
+    overflow-x: hidden;
+  }
+  
+  
+  .modal h1{
+    font-size: 3rem;
+  }
+  
+  .modal h2{
+    font-size: 2rem;
+    margin: 0.313rem;
+  }
+  
+  .modal p{
+    font-size: 1.5rem;
+  }
+
+  /* Modal Link Images */
+#Garvey:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/marcus-gar.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
 }
+
+#Ella:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/ella.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Roseland:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/roseland.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Charlestown:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/Charlestown-State-Prison.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Norfolk:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/norfolk.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Bimbi:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/john\ bimbi.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#one:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/temple\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#two:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/two.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Betty:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/betty-x.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Attallah:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/atta.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Ily:hover::before{
+  content:"";
+  position: absolute;
+  left: 20%;
+  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Hate:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#NAACP:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/NAACP_seal.svg.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#twenty-seven:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/no.27.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#JFK:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/jfk-assassination-gettyimages-517330536.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Lumumba:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/lumumba.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Evers:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/MDAH-Medgar-Evers.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#girls:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display:inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#MLK:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/1515969703-MLK_and_Malcolm_X.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Azzam:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/azzamm.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Nkrumah:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/Kwame-Nkrumah.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Nasser:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/Stevan_Kragujevic\,_Gamal_Abdel_Naser_u_Beogradu\,_1962.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Ben-Bella:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/BenBella.jpeg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#fire:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/burn.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#miltant:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/artworks-FFmFEzM03eM7e55G-EayWsg-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#audubon:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/audobon.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+/* Modal Link Images End */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+  header{
+    height: 18.75rem;
+    width: auto;
+  }
+
+  #title{
+    font-size: 1.875rem;
+    padding: 0.313rem 0;
+  }
+  
+  img{
+    height: 18.75rem;
+    width: 18.75rem;
+    margin: 0.313rem 0.625rem;
+    border-radius: 1.25rem;
+    z-index: 1;
+  }
+
+  li{
+    display: block;
+    padding: 0.625rem 0.313rem;;
+    font-size: 3.75rem;
+    text-align: center;
+  }
+
+  /* Side Widget */
+  #side-widget{
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+
+  #side-widget img{
+    height: inherit;
+    width: auto;
+    margin: 0.313rem;
+  }
+/* Side Menu */
+  #side-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.313rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 0.25rem );
+    -webkit-backdrop-filter: blur( 0.25rem);
+    border-radius: 0.625rem;
+    border: 0.063rem solid rgba( 255, 255, 255, 0.18 );
+    z-index: 3;
+  }
+
+/* Image Caption Containers */
+  #early-life,#NOI,#Departure,#Human_Rights_Activists{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-content: center;
+    justify-items: center;
+  }
+
+  #early-life{
+    background-image: url("imgs/malcolmx-ella.jpg");
+    background-position: 35%;
+  }
+  
+  #NOI{
+    background-image: url("imgs/NOI-1.jpg");
+    background-position: 35%;
+  }
+  
+  #Departure{
+    background-image: url("imgs/download.jpg");
+    background-position: 75%;
+  }
+  
+  #Human_Rights_Activists{
+    background-image: url("imgs/Malcolm-X-in-Cairo_CrescentStarAfrica.jpg");
+    background-position: 65%;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background-color: #f8f8ff;
+  }
+
+  section div {
+    height: auto;
+    width: 95%;
+  }
+  
+  section h1{
+    font-size: 4.375rem;
+  }
+  
+  section p{
+    font-size: 1.563rem;
+    line-height: 2.5;
+    padding:  0.625rem;
+  }
+
+  /* Full Image Elements */
+
+.fullImage{
+    width:100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    overflow-y: scroll;
+  }
+  
+  .fullImage img{
+    margin-top: 7.813rem;
+    width: 28.125rem;
+    height: 28.125rem;
+    max-width: 28.125rem;
+  }
+  
+  span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 87%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #img-caption{
+    height: inherit;
+    width: auto;
+    color: #CCCCCC;
+    font-size: 2.5rem;
+    z-index: 2;
+  }
+  
+
+  /* Modal */
+  .modal{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 100%;
+    padding: 0.625rem;
+    background: rgba( 255, 255, 255, 0.9 );
+    backdrop-filter: blur( 0.25rem );
+    -webkit-backdrop-filter: blur( 0.25rem);
+    border-radius: 0.625rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 6;
+  }
+  
+  .modal div{
+    padding: 1.563rem;
+    height: auto;
+    width: fit-content;
+    overflow-x: hidden;
+  }
+  
+  
+  .modal h1{
+    font-size: 3rem;
+  }
+  
+  .modal h2{
+    font-size: 2rem;
+    margin: 0.313rem;
+  }
+  
+  .modal p{
+    font-size: 1.875rem;
+  }
+
+  /* Modal Link Images */
+#Garvey:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/marcus-gar.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Ella:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/ella.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Roseland:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/roseland.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Charlestown:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/Charlestown-State-Prison.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Norfolk:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/norfolk.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Bimbi:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/john\ bimbi.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#one:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/temple\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#two:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/two.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Betty:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/betty-x.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Attallah:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/atta.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Ily:hover::before{
+  content:"";
+  position: absolute;
+  left: 20%;
+  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Hate:hover::before{
+  content:"";
+  position: absolute;
+  left: 20%;
+  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#NAACP:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/NAACP_seal.svg.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#twenty-seven:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/no.27.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#JFK:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/jfk-assassination-gettyimages-517330536.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Lumumba:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/lumumba.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Evers:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/MDAH-Medgar-Evers.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#girls:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display:inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#MLK:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/1515969703-MLK_and_Malcolm_X.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Azzam:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/azzamm.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Nkrumah:hover::before{
+  content:"";
+  position: absolute;
+  left: 10%;
+  background-image: url('imgs/Kwame-Nkrumah.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Nasser:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/Stevan_Kragujevic\,_Gamal_Abdel_Naser_u_Beogradu\,_1962.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Ben-Bella:hover::before{
+  content:"";
+  position: absolute;
+  left: 75%;
+  background-image: url('imgs/BenBella.jpeg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#fire:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/burn.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#miltant:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/artworks-FFmFEzM03eM7e55G-EayWsg-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#audubon:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/audobon.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+/* Modal Link Images End */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header{
+    height: 18.75rem;
+    width: auto;
+  }
+
+  #title{
+    font-size: 1.875rem;
+    padding: 0.313rem 0;
+  }
+  
+  img{
+    height: 15.625rem;
+    width: 15.625rem;
+    margin: 0.313rem 0.625rem;
+    border-radius: 1.25rem;
+    z-index: 1;
+  }
+
+  li{
+    display: block;
+    padding: 0.625rem 0.313rem;;
+    font-size: 3.75rem;
+    text-align: center;
+  }
+
+  /* Side Widget */
+  #side-widget{
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+
+  #side-widget img{
+    height: inherit;
+    width: auto;
+    margin: 0.313rem;
+  }
+/* Side Menu */
+  #side-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 80%;
+    right: 0;
+    bottom: 0;
+    padding: 0.313rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 0.25rem );
+    -webkit-backdrop-filter: blur( 0.25rem);
+    border-radius: 0.625rem;
+    border: 0.063rem solid rgba( 255, 255, 255, 0.18 );
+    z-index: 3;
+  }
+
+/* Image Caption Containers */
+  #early-life,#NOI,#Departure,#Human_Rights_Activists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw
+  }
+
+  #early-life{
+    background-image: url("imgs/malcolmx-ella.jpg");
+    background-position: 35%;
+  }
+  
+  #NOI{
+    background-image: url("imgs/NOI-1.jpg");
+    background-position: 35%;
+  }
+  
+  #Departure{
+    background-image: url("imgs/download.jpg");
+    background-position: 75%;
+  }
+  
+  #Human_Rights_Activists{
+    background-image: url("imgs/Malcolm-X-in-Cairo_CrescentStarAfrica.jpg");
+    background-position: 65%;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background-color: #f8f8ff;
+  }
+
+  section div {
+    height: auto;
+    width: 95%;
+  }
+  
+  section h1{
+    font-size: 4.375rem;
+  }
+  
+  section p{
+    font-size: 1.563rem;
+    line-height: 2.5;
+    padding:  0.625rem;
+  }
+
+  /* Full Image Elements */
+
+.fullImage{
+    width:100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    overflow-y: scroll;
+  }
+  
+  .fullImage img{
+    margin-top: 7.813rem;
+    width: 28.125rem;
+    height: 28.125rem;
+    max-width: 28.125rem;
+  }
+  
+  span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 87%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #img-caption{
+    height: inherit;
+    width: auto;
+    color: #CCCCCC;
+    font-size: 2.5rem;
+    z-index: 2;
+  }
+  
+
+  /* Modal */
+  .modal{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 100%;
+    padding: 0.625rem;
+    background: rgba( 255, 255, 255, 0.9 );
+    backdrop-filter: blur( 0.25rem );
+    -webkit-backdrop-filter: blur( 0.25rem);
+    border-radius: 0.625rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 6;
+  }
+  
+  .modal div{
+    padding: 1.563rem;
+    height: auto;
+    width: fit-content;
+    overflow-x: hidden;
+  }
+  
+  
+  .modal h1{
+    font-size: 3rem;
+  }
+  
+  .modal h2{
+    font-size: 2rem;
+    margin: 0.313rem;
+  }
+  
+  .modal p{
+    font-size: 1.875rem;
+  }
+
+  /* Modal Link Images */
+#Garvey:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/marcus-gar.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Ella:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/ella.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Roseland:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/roseland.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Charlestown:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/Charlestown-State-Prison.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Norfolk:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/norfolk.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Bimbi:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/john\ bimbi.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#one:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/temple\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inherit;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#two:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/two.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Betty:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/betty-x.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Attallah:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/atta.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Ily:hover::before{
+  content:"";
+  position: absolute;
+  left: 20%;
+  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Hate:hover::before{
+  content:"";
+  position: absolute;
+  left: 20%;
+  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#NAACP:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/NAACP_seal.svg.png');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#twenty-seven:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/no.27.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#JFK:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/jfk-assassination-gettyimages-517330536.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Lumumba:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/lumumba.webp');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Evers:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/MDAH-Medgar-Evers.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#girls:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display:inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#MLK:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/1515969703-MLK_and_Malcolm_X.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Azzam:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/azzamm.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Nkrumah:hover::before{
+  content:"";
+  position: absolute;
+  left: 10%;
+  background-image: url('imgs/Kwame-Nkrumah.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#Nasser:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/Stevan_Kragujevic\,_Gamal_Abdel_Naser_u_Beogradu\,_1962.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#Ben-Bella:hover::before{
+  content:"";
+  position: absolute;
+  left: 75%;
+  background-image: url('imgs/BenBella.jpeg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#fire:hover::before{
+  content:"";
+  position: absolute;
+  left: 30%;
+  background-image: url('imgs/burn.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+
+#miltant:hover::before{
+  content:"";
+  position: absolute;
+  background-image: url('imgs/artworks-FFmFEzM03eM7e55G-EayWsg-t500x500.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem;  
+  height: 12.5rem;
+}
+
+#audubon:hover::before{
+  content:"";
+  position: absolute;
+  left: 70%;
+  background-image: url('imgs/audobon.jpg');
+  background-repeat: no-repeat;
+  background-size: 12.5rem;
+  display: inline-block;
+  width: 18.75rem; 
+  height: 12.5rem;
+}
+/* Modal Link Images End */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
