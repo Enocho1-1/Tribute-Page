@@ -4,20 +4,25 @@
   padding: 0;
 }
 
-body{
-  font-family: 'Oswald', sans-serif;
-  overflow-x: hidden;
-}
-
 @keyframes myMove {
   35%{
     transform:scale(0.7);
   }
 }
 
+body{
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+
+
 main{
   height: 100vh;
   width: 100vw;
+}
+
+a{
+  color: #e60000;
 }
 
 img{
@@ -28,18 +33,6 @@ img{
   z-index: 1;
 }
 
-
- section h1{
-  animation: myMove 6s infinite;
-}
-
-
-#early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover{
-  cursor: pointer;
-  box-shadow: 0.125rem 0.125rem  0.125rem  #e60000;
-}
-
-
 button {
   color: #090909;
   margin: 0.313rem;
@@ -49,13 +42,11 @@ button {
   background: #e8e8e8;
   border: 0.063rem solid #e8e8e8;
   transition: all .3s;
-  box-shadow: 0.375rem 0.375rem 0.75rem #c5c5c5,
-              -0.375rem -0.375rem 0.75rem #ffffff;
 }
 
 button:hover {
   cursor: pointer;
-  border: 0.063rem solid white;
+  border: 0.063rem solid #8e8e8e;
 }
 
 button:active {
@@ -63,139 +54,6 @@ button:active {
               -0.25rem -0.25rem 0.75rem #ffffff;
 }
 
-a{
-  color: #e60000;
-}
-
-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-  width: 100vw;
-  background-color: #8e8e8e;
-}
-
-section div {
-  height: auto;
-  width: 80%;
-}
-
-section:has(h1,  h2){
-  color: #f5f5f5;
-}
-
-section h1{
-  font-size: 4rem;
-  padding: 0.625rem;
-  text-shadow: 1px 1px 1px #747474,
-  1px 2px 1px #747474,
-  1px 3px 1px #747474,
-  1px 4px 1px #747474,
-  1px 5px 1px #747474,
-  1px 6px 1px #747474,
-  1px 7px 1px #747474,
-  1px 8px 1px #747474,
-  1px 9px 1px #747474,
-  1px 10px 1px #747474,
-1px 18px 6px rgba(16,16,16,0.4),
-1px 22px 10px rgba(16,16,16,0.2),
-1px 25px 35px rgba(16,16,16,0.2),
-1px 30px 60px rgba(16,16,16,0.4);
-
-}
-
-section p{
-  font-size: 1.5rem;
-  line-height: 2.5;
-  padding:  0.625rem;
-}
-
-.section_one_header_two::after{
-  content: " | Harlem";
-}
-
-/* Full Image Elements */
-
-.fullImage{
-width:100%;
-height: 100vh;
-background: rgba(0,0,0,0.9);
-position: fixed;
-top: 0;
-left: 0;
-display: none;
-align-items: center;
-justify-content: center;
-overflow-y: scroll;
-z-index: 4;
-}
-
-.fullImage img{
-width: 31.25rem;
-height: 34.375rem;
-max-width: 31.25rem;
-}
-
-span{
-position: absolute;
-top: 2%;
-right: 5%;
-font-size: 1.875rem;
-color: white;
-cursor: pointer;
-}
-
-#img-caption{
-  position: relative;
-  height: auto;
-  width: 31.25rem;
-  color: #CCCCCC;
-  font-size: 1.563rem;
-  z-index: 2;
-}
-
-header h1::after{
-  content: " | el-Hajj Malik el-Shabazz";
-}
-
-ul{
-  list-style: none;
-  justify-content: flex-start;
-}
-
-ul a{
-  color:#0d0d0d;
-  text-decoration: none;
-}
-
-li{
-  display: block;
-  padding: 0.625rem 0.313rem;;
-  font-size: 2.188rem;
-  text-align: center;
-}
-
-ul a:hover{
-  color: #e60000;
-}
-
-ul a::after{
-  content: "";
-  display: block;
-  border: 0.063rem solid #e60000;
-  margin: 0.313rem;
-  transform: scale(0);
-}
-
-ul a:hover::after{
-  content: "";
-  display: block;
-  border: 0.063rem solid #e60000;
-  margin: 0.313rem;
-  transform: scale(1);
-  transition: ease-in-out 1s;
-}
 
 /* Side Widget */
 #side-widget{
@@ -239,7 +97,6 @@ ul a:hover::after{
   background: rgba( 255, 255, 255, 0.7 );
   backdrop-filter: blur( 0.25rem );
   -webkit-backdrop-filter: blur( 0.25rem);
-  border-radius: 0.625rem;
   border: 0.063rem solid rgba( 255, 255, 255, 0.18 );
   z-index: 3;
 }
@@ -252,6 +109,45 @@ ul a:hover::after{
   color: #e60000;
   cursor: pointer;
 }
+
+ul{
+  list-style: none;
+  justify-content: flex-start;
+}
+
+ul a{
+  color:#0d0d0d;
+  text-decoration: none;
+}
+
+li{
+  display: block;
+  padding: 0.625rem 0.313rem;;
+  font-size: 2.188rem;
+  text-align: center;
+}
+
+ul a:hover{
+  color: #e60000;
+}
+
+ul a::after{
+  content: "";
+  display: block;
+  border: 0.063rem solid #e60000;
+  margin: 0.313rem;
+  transform: scale(0);
+}
+
+ul a:hover::after{
+  content: "";
+  display: block;
+  border: 0.063rem solid #e60000;
+  margin: 0.313rem;
+  transform: scale(1);
+  transition: ease-in-out 1s;
+}
+
 
 /* Header Elements */
 header{
@@ -287,6 +183,57 @@ header{
 1px 30px 60px rgba(16,16,16,0.4);
 }
 
+header h1::after{
+  content: " | el-Hajj Malik el-Shabazz";
+}
+
+
+/* Full Image Elements */
+
+.fullImage{
+display: flex;
+width:100%;
+height: 100vh;
+background: rgba(0,0,0,0.9);
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+z-index: 4;
+}
+
+.fullImage img{
+width: 25rem;
+height: 25rem;
+/* max-width: 31.25rem; */
+margin-bottom: 45px;
+}
+
+span{
+position: absolute;
+top: 2%;
+right: 5%;
+font-size: 1.875rem;
+color: white;
+cursor: pointer;
+}
+
+#img-caption{
+  position: relative;
+  height: auto;
+  width: 40.62rem;
+  color: #CCCCCC;
+  font-size: 1.563rem;
+  z-index: 2;
+}
+
+/* Life Sections & Elements */
+#early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: ease-in-out 1s;
+}
+
 #early-life,#NOI,#Departure,#Human_Rights_Activists{
   display: flex;
   flex-direction: row;
@@ -296,41 +243,76 @@ header{
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 #early-life{
   background-image: url("imgs/malcolmx-ella.jpg");
   background-position: 75%;
-  width: 100vw;
 }
 
 #NOI{
   background-image: url("imgs/NOI-1.jpg");
-  width: 100vw;
 }
 
 #Departure{
   background-image: url("imgs/download.jpg");
-  width: 100vw;
 }
 
 #Human_Rights_Activists{
   background-image: url("imgs/Malcolm-X-in-Cairo_CrescentStarAfrica.jpg");
-  width: 100vw;
 }
 
-.page_overlay{
-  position: fixed; 
-  display: none; 
-  width: 100vw; 
-  height: 100vh; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
-  z-index: 5;
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  background-color: #8e8e8e;
+}
+
+section div {
+  height: auto;
+  width: 80%;
+}
+
+section h1{
+  animation: myMove 6s infinite;
+}
+
+section:has(h1,  h2){
+  color: #f5f5f5;
+}
+
+section h1{
+  font-size: 4rem;
+  padding: 0.625rem;
+  text-shadow: 1px 1px 1px #747474,
+  1px 2px 1px #747474,
+  1px 3px 1px #747474,
+  1px 4px 1px #747474,
+  1px 5px 1px #747474,
+  1px 6px 1px #747474,
+  1px 7px 1px #747474,
+  1px 8px 1px #747474,
+  1px 9px 1px #747474,
+  1px 10px 1px #747474,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+section p{
+  font-size: 1.5rem;
+  line-height: 2.5;
+  padding:  0.625rem;
+}
+
+.section_one_header_two::after{
+  content: " | Harlem";
 }
 
 .overlay{
@@ -1756,22 +1738,13 @@ header{
     z-index: 4;
   }
   
-  .fullImage img{
-    margin-top: 7.813rem;
-    width: 31.25rem;
-    height: 34.375rem;
-    max-width: 31.25rem;
-  }
-  
-  #img-caption{
-    margin-top: 7.813rem;
-    position: relative;
+  /* #img-caption{
     height: auto;
     width: 31.25rem;
     color: #CCCCCC;
     font-size: 1.563rem;
     z-index: 2;
-  }
+  } */
   
 
   /* Modal */
