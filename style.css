@@ -84,6 +84,7 @@ section div {
 section:has(h1,  h2){
   color: #f5f5f5;
 }
+
 section h1{
   font-size: 4rem;
   padding: 0.625rem;
