@@ -1,13 +1,12 @@
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
 @keyframes myMove {
   35%{
     transform:scale(0.7);
   }
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -82,9 +81,6 @@ button:active {
 
 /* Side Menu */
 #side-menu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   display: none;
   width: 100%;
@@ -108,11 +104,6 @@ button:active {
   font-size: 2.813rem;
   color: #e60000;
   cursor: pointer;
-}
-
-ul{
-  list-style: none;
-  justify-content: flex-start;
 }
 
 ul a{
@@ -186,8 +177,6 @@ header{
 header h1::after{
   content: " | el-Hajj Malik el-Shabazz";
 }
-
-
 /* Full Image Elements */
 
 .fullImage{
@@ -204,8 +193,7 @@ z-index: 4;
 
 .fullImage img{
 width: 25rem;
-height: 25rem;
-/* max-width: 31.25rem; */
+max-width: 25rem;
 margin-bottom: 45px;
 }
 
@@ -366,9 +354,22 @@ section p{
   text-decoration: none;
 }
 
+.inner-link + img{
+  height: 4.688em;
+  width: 4.688em;
+}
+
+.hide{
+  display: none;
+}
+
+.inner-link:hover + .hide{
+  display: inline-block;
+  position: absolute;
+}
 
 /* Modal Link Images */
-#Garvey:hover::before{
+/* #Garvey:hover::before{
   content:"";
   position: absolute;
   background-image: url('imgs/marcus-gar.jpg');
@@ -377,7 +378,7 @@ section p{
   display: inherit;
   width: 18.75rem; 
   height: 12.5rem;
-}
+} */
 
 #Ella:hover::before{
   content:"";
@@ -1787,8 +1788,20 @@ section p{
     font-size: 1.875rem;
   }
 
+  .page_overlay{
+    position: fixed; 
+    display: none; 
+    width: 100vw; 
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 5;
+  }
   /* Modal Link Images */
-#Garvey:hover::before{
+/* #Garvey:hover::before{
   content:"";
   position: absolute;
   background-image: url('imgs/marcus-gar.jpg');
@@ -1797,7 +1810,7 @@ section p{
   display: inherit;
   width: 18.75rem; 
   height: 12.5rem;
-}
+} */
 
 #Ella:hover::before{
   content:"";
