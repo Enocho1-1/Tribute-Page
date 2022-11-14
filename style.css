@@ -193,6 +193,7 @@ z-index: 4;
 
 .fullImage img{
 width: 25rem;
+height: 25rem;
 max-width: 25rem;
 margin-bottom: 45px;
 }
@@ -260,10 +261,11 @@ section{
   background-color: #8e8e8e;
 }
 
-section div {
+/* section div {
   height: auto;
   width: 80%;
-}
+} */
+
 
 section h1{
   animation: myMove 6s infinite;
@@ -311,6 +313,19 @@ section p{
   z-index: 0;
 }
 
+.page_overlay{
+  position: fixed; 
+  display: none; 
+  width: 100vw; 
+  height: 100vh; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 5;
+}
+
 .modal{
   position: fixed;
   display: none;
@@ -330,7 +345,7 @@ section p{
 }
 
 .modal div{
-  padding: 1.563rem;
+  padding: 0 30px;
   height: auto;
   width: fit-content;
   overflow-x: hidden;
@@ -369,126 +384,6 @@ section p{
 }
 
 /* Modal Link Images */
-/* #Garvey:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/marcus-gar.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-} */
-
-#Ella:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/ella.png');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Roseland:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/roseland.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Bimbi:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/john\ bimbi.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#one:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/temple\ 1.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#two:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/two.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Betty:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/betty-x.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Attallah:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/atta.webp');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Ily:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Hate:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#NAACP:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/NAACP_seal.svg.png');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
 
 #twenty-seven:hover::before{
   content:"";
@@ -1767,12 +1662,12 @@ section p{
     z-index: 6;
   }
   
-  .modal div{
+  /* .modal div{
     padding: 1.563rem;
     height: auto;
     width: fit-content;
     overflow-x: hidden;
-  }
+  } */
   
   
   .modal h1{
@@ -1785,284 +1680,6 @@ section p{
   }
   
   .modal p{
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
-
-  .page_overlay{
-    position: fixed; 
-    display: none; 
-    width: 100vw; 
-    height: 100vh; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 5;
-  }
-  /* Modal Link Images */
-/* #Garvey:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/marcus-gar.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-} */
-
-#Ella:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/ella.png');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Roseland:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/roseland.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Bimbi:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/john\ bimbi.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inherit;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#one:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/temple\ 1.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#two:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/two.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Betty:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/betty-x.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Attallah:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/atta.webp');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Ily:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/shabazz-ilyasah-250x300.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Hate:hover::before{
-  content:""; 
-  position: absolute;
-  background-image: url('imgs/The_Hate_That_Hate_Produced.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#NAACP:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/NAACP_seal.svg.png');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#twenty-seven:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/no.27.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#JFK:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/jfk-assassination-gettyimages-517330536.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Lumumba:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/lumumba.webp');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Evers:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/MDAH-Medgar-Evers.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#girls:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/130912030048-02-birmingham-church-bombing.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display:inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#MLK:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/1515969703-MLK_and_Malcolm_X.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Azzam:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/azzamm.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Nkrumah:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/Kwame-Nkrumah.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#Nasser:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/Stevan_Kragujevic\,_Gamal_Abdel_Naser_u_Beogradu\,_1962.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#Ben-Bella:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/BenBella.jpeg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#fire:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/burn.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-
-#miltant:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/artworks-FFmFEzM03eM7e55G-EayWsg-t500x500.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem;  
-  height: 12.5rem;
-}
-
-#audubon:hover::before{
-  content:"";
-  position: absolute;
-  background-image: url('imgs/audobon.jpg');
-  background-repeat: no-repeat;
-  background-size: 12.5rem;
-  display: inline-block;
-  width: 18.75rem; 
-  height: 12.5rem;
-}
-/* Modal Link Images End */
 }
