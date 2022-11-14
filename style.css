@@ -220,13 +220,13 @@ cursor: pointer;
 }
 
 /* Life Sections & Elements */
-#early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover{
+#early-life img:hover,#NOI img:hover,#Departure img:hover,#Human_Rights_Activists img:hover,#Assassination_Legacy img:hover{
   cursor: pointer;
   transform: scale(1.2);
   transition: ease-in-out 1s;
 }
 
-#early-life,#NOI,#Departure,#Human_Rights_Activists{
+#early-life,#NOI,#Departure,#Human_Rights_Activists,#Assassination_Legacy{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -255,6 +255,11 @@ cursor: pointer;
   background-image: url("imgs/Malcolm-X-in-Cairo_CrescentStarAfrica.jpg");
 }
 
+#Assassination_Legacy{
+  background-image: url("imgs/84.005-1.jpg");
+}
+
+
 section{
   display: flex;
   flex-direction: column;
@@ -263,11 +268,6 @@ section{
   width: 100vw;
   background-color: #8e8e8e;
 }
-
-/* section div {
-  height: auto;
-  width: 80%;
-} */
 
 
 section h1{
@@ -789,9 +789,6 @@ section p{
   .modal p{
     font-size: 1.875rem;
   }
-
-  /* Modal Link Images */
-
 }
 
    /* Media Query for Large screens */
