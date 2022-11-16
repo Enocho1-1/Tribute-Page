@@ -55,5 +55,12 @@
                  sectionFour.style.display = 'block'
                 overlay.style.display = 'block'
              break
+             case "legacy":
+               const sectionFive = document.querySelector('#section_five_modal')
+                overlay = document.querySelector('.page_overlay')
+
+                sectionFive.style.display = 'block'
+               overlay.style.display = 'block'
+            break
         }
     })
