@@ -231,7 +231,7 @@ section p{
 .modal div{
   padding: 0 30px;
   height: auto;
-  width: fit-content;
+  width: 90%;
   overflow-x: hidden;
 }
 
