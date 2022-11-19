@@ -450,6 +450,7 @@ section p{
 
   /* Modal */
   .modal{
+    height: 75%;
     width: 100%;
   }
   
